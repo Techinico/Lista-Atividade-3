@@ -1,0 +1,174 @@
+#Alunos:Allysson B. Dally DRE: 122093185 |Letícia Gevú DRE: 122096345
+
+# Lista 1
+
+# 10)
+frase = "ola mundo"
+counter = 0
+counterEspaco = 0
+for letra in frase:
+    if letra in ["a", "e", "i", "o", "u"]:
+        counter += 1
+    if letra == " ":
+        counterEspaco += 1
+print("Vogais: " + str(counter))
+print("Espaços:" + str(counterEspaco))
+
+
+# 11)
+frase = "Universidade Federal do Rio de Janeiro"
+
+primeiraPalavra = frase.split(" ")[0]
+print(primeiraPalavra.lower())
+
+
+# 12)
+valor = float(input("Insira o valor da TV: "))
+porcentagemDesconto = float(input("Agora a porcentagem do desconto: "))
+
+valorComDesconto = valor * (porcentagemDesconto/100)
+print("Valor da TV com desconto: " + str(valorComDesconto))
+
+taxa = float(input("Insira a taxa de juros por mês: "))
+parcelas = int(input("Insira a quantidade de parcelas: "))
+
+juros = valor * taxa * parcelas
+print("Juros = " + str(juros))
+
+# 13)
+texto = "Texto para encriptar"
+encriptado = texto[::-1]
+print(encriptado)
+
+decriptado = encriptado[::-1]
+print(decriptado)
+
+
+# Lista 2
+
+# 10)
+CONCEITO A
+
+# 11)
+A data de hoje nao eh 8/5/13
+
+# 12)
+a = int(input("Insira o primeiro numero"))
+b = int(input("Insira o segundo numero"))
+c = int(input("Insira o terceiro numero"))
+
+if a > b:
+    if a > c:
+        print(a)
+    else:
+        print(c)
+else:
+    if b > c:
+        print(b)
+    else:
+        print(c)
+
+# 13)
+a = int(input("Insira o primeiro numero"))
+b = int(input("Insira o segundo numero"))
+c = int(input("Insira o terceiro numero"))
+
+iguais = 0
+
+if(a == b):
+    iguais += 1
+
+if (b == c):
+    iguais += 1
+
+if (a == c):
+    iguais += 1
+
+# 14)
+idade = int(input("Insira a idade"))
+classificacao = ""
+
+if(idade < 9):
+    classificacao = "mirim"
+if(idade >= 9 and idade < 14):
+    classificacao = "infantil"
+if(idade >= 14 and idade < 18):
+    classificacao = "juvenil":
+else:
+    classificacao = "adulto"
+
+print(classificacao)
+
+# 15)
+a = int(input("Insira o primeiro numero"))
+b = int(input("Insira o segundo numero"))
+c = int(input("Insira o terceiro numero"))
+
+if(a + b >= c and b + c >= a and c + a >= b):
+    print("É válido")
+    if(a == b and b == c):
+        print("Equilátero")
+    else:
+        if(a == b or b == c or a == c):
+            print("Isóceles")
+        else:
+            print("Escaleno")
+else:
+    print("Não é válido")
+
+# 16)
+a = int(input("Insira o primeiro numero"))
+b = int(input("Insira o segundo numero"))
+c = int(input("Insira o terceiro numero"))
+
+if(a >= b and a >= c):
+    if(b > c):
+        print(a)
+        print(b)
+        print(c)
+    else:
+        print(a)
+        print(c)
+        print(b)
+
+else:
+    if(b >= a and b >= c):
+        if(a > c):
+            print(b)
+            print(a)
+            print(c)
+        else:
+            print(b)
+            print(c)
+            print(a)
+    else:
+        if(a > b):
+            print(c)
+            print(a)
+            print(b)
+        else:
+            print(c)
+            print(b)
+            print(a)
+
+# 17)
+a = int(input("Insira o primeiro numero"))
+b = int(input("Insira o segundo numero"))
+c = int(input("Insira o terceiro numero"))
+
+media = (a + b + c) / 3
+if(media < 7):
+    print("[" + str(media) + "] - Reprovado")
+else:
+    if(media == 10):
+        print("[" + str(media) + "] - Aprovado com distinção")
+    else:
+        print("[" + str(media) + "] - Aprovado")
+
+# 18)
+a = int(input("Insira o numero"))
+if(a % 2 == 0):
+    print("Par")
+else:
+    print("Ímpar")
+
